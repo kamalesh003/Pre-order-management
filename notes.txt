@@ -1,0 +1,34 @@
+Problem Statement:
+In the fast-paced world of e-commerce and retail, efficiently managing pre-orders presents a significant challenge for businesses. 
+Traditional systems often struggle to handle large volumes of orders simultaneously, leading to delays, poor customer experience, and loss of potential sales. 
+Customers demand real-time updates on their order status and expect quick fulfillment once products become available
+
+Objective :To solve the challenges associated with managing pre-orders
+
+Tech Stack:
+
+Streamlit
+Flask
+Redis(DB)
+Celery
+
+Language: Python
+
+
+
+NOTES:
+
+Celery excels in scaling across multiple nodes and distributing tasks efficiently. 
+
+The features like automatic retries and robust error handling
+
+Celery supports a microservices architecture well by enabling distributed task processing and allowing different services to communicate asynchronously.
+
+Being an open-source tool, Celery is cost-effective.
+
+Security depends heavily on the chosen message broker and backend. 
+
+
+Scalability : Design can easily scale by adding more workers or nodes to handle increased loads, which is essential for applications expecting high volumes of orders.
+Feedback: Providing users with real-time feedback on their pre-order status (pending, success, failure) enhances the user experience.
+Async. Task Processing: This is particularly beneficial for tasks like processing orders, which can be time-consuming.
