@@ -1,4 +1,18 @@
-***Efficient pre-order management system leveraging Celery for distributed task processing***
+###Efficient pre-order management system leveraging Celery for distributed task processing###
+
+##TO RUN:##
+start Terminal for each command down
+
+**server:** redis-server
+
+**celery worker:**celery -A celery_tasks.tasks worker --loglevel=info --concurrency=4 --pool=solo
+
+**flask backend:** python backend.py
+
+**publisher-side:** streamlit run publisher.py
+
+**User-side:** streamlit run app.py
+
 
 It involves two parts: 
 Publisher site (to let publsiher to sell pre-order products using avaialblity data)
